@@ -158,3 +158,6 @@ Use the encode function. How many tokens does our prompt have?
 - 222
 - 322
 - 422
+
+**Answer**
+322
