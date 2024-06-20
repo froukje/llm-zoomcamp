@@ -127,3 +127,40 @@ docker run -it \
 docker exec -it bash
 ollama pull phi3
 ´´´
+
+## 2.8 Ollama & Phi3 + Elastic in Docker-Compose
+
+- Creating a Docker-Compose file
+- Re-running the module 1 notebook
+
+start docker compose:
+´´'
+docker-compose up
+´´´
+
+stop ollama
+´´´
+systemctl stop ollama.service
+´´´
+
+To use ollama we need to pull a model locally. Enter ollama container:
+
+´´´
+docker exec -it ollama bash
+´´´
+
+pull model inside the container
+
+´´´
+olllama pull phi3
+´´´
+
+## UI for RAG
+
+- Putting it in Streamlit
+
+run app with
+
+´´´
+streamlit run qa_faq.py
+´´´
