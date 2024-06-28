@@ -159,4 +159,14 @@ How many completion tokens did you get in response?
 - 1204
 
 **Answer:**
+build image:
+`docker build -t ollama-gemma2b . `
+
+run image:
+`docker run -it --rm -p 11434:11434 --name ollama-gemma2b ollama-gemma2b`
+
+enter image:
+`docker exec -it ollama-gemma2b bash`
+
+result:
 304

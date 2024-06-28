@@ -1,3 +1,3 @@
 FROM ollama/ollama
 
-COPY ollama_files /ollama_files
+COPY ollama_files /root/.ollama
